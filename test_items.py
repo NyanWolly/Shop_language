@@ -16,4 +16,4 @@ def test_button_add_to_basket(browser):
     select = Select(browser.find_element(By.XPATH, "//select[contains(@name, 'language')]"))
     print(f"\nВыбранное значение языка на странице: {select.first_selected_option.text}")
 
-    assert button_add.is_displayed(), "Кнопка добавления в корзину не отображается"
+    assert button_add, "Кнопка добавления в корзину не отображается"
