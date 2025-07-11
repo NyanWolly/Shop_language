@@ -2,6 +2,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import Select
+import time
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
@@ -17,3 +18,5 @@ def test_button_add_to_basket(browser):
     print(f"\nВыбранное значение языка на странице: {select.first_selected_option.text}")
 
     assert button_add, "Кнопка добавления в корзину не отображается"
+
+    # time.sleep(30)
