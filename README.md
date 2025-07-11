@@ -1,4 +1,4 @@
-Для запуска теста использовать:
+Для запуска теста обязательно использовать следующие параметры:
 ```
-pytest --language=[lang] -s -v test_items.py
+pytest  -s -v --language=[lang] --browser_name=[browser] test_items.py
 ```
